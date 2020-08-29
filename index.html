@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <h2 id="username">Chat</h2>
+      <div id="buttons">
+
+
+      </div>
+    </header>
+    <section class="content-protected" id="contentProtected">
+
+
+    </section>
+    <form id="messageForm">
+      <div class="message-container">
+        <input type="text" class="message-input" id="messageInput" placeholder="envia tu mesaje">
+        <button class="button button-primary" type="submit">enviar</button>
+      </div>
+    </form>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDwdHxBez5zL2ySIOXvhBaTAUPr_ClQ5BA",
+      authDomain: "chatapp-38e8c.firebaseapp.com",
+      databaseURL: "https://chatapp-38e8c.firebaseio.com",
+      projectId: "chatapp-38e8c",
+      storageBucket: "chatapp-38e8c.appspot.com",
+      messagingSenderId: "216963323287",
+      appId: "1:216963323287:web:cbcaff48eead5c9a13a0d2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="./js/app.js" type="module"></script>
+  <script src="./js/no-module.js" nomodule></script>
+</body>
+
+</html>
